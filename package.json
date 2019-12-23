@@ -4,8 +4,8 @@
   "description": "",
   "scripts": {
     "clean": "rm -rf ./node_modules && rm -rf packages/*/node_modules",
-    "start": "yarn workspace @saccade/components storybook",
-    "storybook": "yarn workspace @saccade/components run storybook"
+    "storybook": "yarn workspace @saccade/components run storybook",
+    "dev": "yarn workspace @saccade/www dev"
   },
   "dependencies": {},
   "devDependencies": {
@@ -24,12 +24,8 @@
   },
   "private": true,
   "workspaces": {
-    "packages": [
-      "packages/*"
-    ],
-    "nohoist": [
-      "**/babel-loader"
-    ]
+    "packages": ["packages/*"],
+    "nohoist": ["**/babel-loader"]
   },
   "keywords": []
 }
